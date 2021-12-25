@@ -4,6 +4,7 @@ import  {useEffect, useState} from 'react'
 import {nanoid} from 'nanoid'
 import Search from './components/Search';
 import Header from './components/Header';
+import DataFetching from './components/DataFetching';
 
 function App() {
   const[notes,setNotes] = useState([
@@ -67,6 +68,7 @@ useEffect(()=>{
      setNotes={setNotes}
      handleAddnote={addNote}
      handleDeleteNote={deleteNote}/>
+     <DataFetching/>
     </div>
     </div>
   );
